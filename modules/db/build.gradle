@@ -99,9 +99,9 @@ def boolean closeActiveConnections(String pid) {
     }
 }
 
-jar.doFirst {
-    tasks.migrateDB.execute()
-}
+//jar.doFirst {
+//    tasks.migrateDB.execute()
+//}
 
 task migrateDB() << {
     println("Migrating database..")
